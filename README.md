@@ -328,40 +328,50 @@ Excel 文件第一列必须是年份列，列名可以是：
 - 第一列：年份
 - 其他列：各个国家/地区的数据
 
-## 🧮 计算指标说明
+## 📊 数据与结果文件解释
 
-系统计算以下主要指标：
+### 数据管理部分
 
-### 开放获取相关指标（OA）
+1. **world_total.json**：全球层面的数据，包括年份总发文量、OA发文量、撤稿量、前1%科学家数量
+2. **total.json**：每个地理单位按照年份的总发文量数据
+3. **OA.json**：每个地理单位按照年份的OA发文量数据
+4. **cooperation.json**：每个地理单位按照年份的合作发文量数据
+5. **retraction.json**：每个地理单位按照年份的撤稿数据
+6. **scientist.json**：每个地理单位按照年份的前1%科学家数量
+7. **FWCI.json**：每个地理单位按照年份的领域加权引用影响数据
+8. **OP.json**：每个地区的开放政策的指标数据
+9. **F2.json**：数据的信息质量，已经除以4放入数据表
+10. **F3.json**：数据的完整性，基于撤回率计算
+11. **alpha_F.json**：财务可持续性数据
+12. **alpha_I.json**：工具/平台可持续性数据
+13. **alpha_L.json**：法律可持续性数据
+14. **weight.json**：开放获取、开放数据、开放政策的权重
 
-- **r_open_t(year, country)**: 该年该国家的 OA/total 比例
-- **r_open_t1()**: 历年各国 OA/total 比例平均值的最大值
-- **P_open_t(year)**: 该年所有国家 OA 数量的平均值
-- **P_open_t1()**: 历年各国 OA 数量均值的最大值
-- **R_open(year, country)**: 综合开放获取指标
+### 计算结果部分
 
-### 包容性相关指标（Inclusive）
-
-- **r_incl_t(year, country)**: 该年该国家的包容性指标
-- **r_incl_t1()**: 历年各国包容性指标平均值的最大值
-- **P_incl_t(year)**: 该年所有国家包容性指标的平均值
-- **P_incl_t1()**: 历年各国包容性指标均值的最大值
-- **R_incl(year, country)**: 综合包容性指标
-
-### 整体指标（Overall）
-
-- **R_oa(year, country)**: 开放获取综合指标（基于 R_open 和 R_incl）
-- **R_oa_bar(year, country)**: R_oa 的标准化值
-
-### 多样性相关指标（OD - Open Diversity）
-
-- **f1(year, country)**: 多样性因子 1
-- **f2(year, country)**: 多样性因子 2
-- **f3(year, country)**: 多样性因子 3
-- **S_od_t(year, country)**: 多样性综合指标 S
-- **A_od_t(year, country)**: 多样性综合指标 A
-- **R_od(year, country)**: 多样性综合指标 R
-- **R_od_bar(year, country)**: R_od 的标准化值
+1. **R.json**：OSRI计算结果数据
+2. **R_oa.json**：开放获取准备度
+3. **R_oa_bar.json**：开放获取准备度
+4. **R_open.json**：开放性
+5. **r_open_t.json**：OA论文的占比
+6. **r_open_t1.json**：OA论文年均占比的最大值
+7. **P_open_t.json**：OA数量
+8. **P_open_t1.json**：OA数量均值最大值
+9. **R_incl.json**：包容性
+10. **P_incl_t.json**：合著论文数量
+11. **P_incl_t1.json**：合著论文数量均值的最大值
+12. **r_incl_t.json**：合著论文占比
+13. **r_incl_t1.json**：合著论文占比均值的最大值
+14. **R_od.json**：开放获取准备度
+15. **R_od_bar.json**：开放获取准备度
+16. **A_od_t.json**：可访问数据量
+17. **A_od_t1.json**：可访问数据量均值最大值
+18. **S_od_t.json**：可共享数据量
+19. **S_od_t1.json**：可共享数据量均值最大值
+20. **f1.json**：数据学术质量
+21. **f2.json**：数据信息质量
+22. **f3.json**：数据完整性（基于撤回率）
+23. **R_op_bar.json**：开放政策准备度
 
 ### 最终指标
 
