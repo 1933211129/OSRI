@@ -61,7 +61,7 @@
 ## 📁 项目结构
 
 ```
-pdq/
+root_dir/
 ├── api.py                 # FastAPI 后端主文件
 ├── calculate.py           # 指标计算核心逻辑
 ├── preset.json            # 前端预设配置
@@ -158,7 +158,7 @@ pip install gunicorn
 gunicorn -w 4 -k uvicorn.workers.UvicornWorker api:app --bind 0.0.0.0:8010
 
 # 或使用 systemd 服务（参考配置）
-# /etc/systemd/system/pdq-api.service
+# /etc/systemd/system/osri-api.service
 ```
 
 #### 前端（Nginx）
