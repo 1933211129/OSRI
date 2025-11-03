@@ -1,7 +1,7 @@
 # OSRI指标计算系统
 
-一个用于计算和管理 OSRI（Open Science Research Index）指标的全栈 Web 应用系统。系统提供数据管理、指标计算等功能。
-项目使用演示：https://meeting.tencent.com/crm/2Y7jqgo3d3
+一个用于计算和管理 OSRI（Open Science Research Index）指标的全栈 Web 应用系统。系统提供数据管理、指标计算等功能。</br>
+项目演示视频：https://meeting.tencent.com/crm/2Y7jqgo3d3
 ## 📋 目录
 
 - [功能特性](#功能特性)
