@@ -1,4 +1,4 @@
-# PDQ - OSRI指标计算系统
+# OSRI指标计算系统
 
 一个用于计算和管理 OSRI（Open Science Research Index）指标的全栈 Web 应用系统。系统提供数据管理、指标计算等完整。
 
